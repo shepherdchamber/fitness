@@ -35,3 +35,21 @@ export const data = [
     context: 'Track and save your medical historyand health data ',
   },
 ];
+
+export const articleData = [
+  {
+    img: 2,
+    heading: 'Disease detection, check up in the laborator',
+    body: 'In this case, the role of the health laboratory is very important to do a disease detection...',
+  },
+  {
+    img: 1,
+    heading: 'Herbal medicines that are safe for consumption',
+    body: 'Herbal medicines that are safe for consumption',
+  },
+  {
+    img: 3,
+    heading: 'Natural care for healthy facial skin',
+    body: 'A healthy lifestyle should start from now and also for your skin health. There are som',
+  },
+];

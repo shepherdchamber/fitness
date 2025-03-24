@@ -1,8 +1,16 @@
 import '../../styles/front-page.css';
 import '../../../src/assets/image/trafalgar-header illustration 1.png';
-export function Frontpage() {
+export function Frontpage({
+  heaeding,
+  body,
+  btnContent,
+  img,
+  flexDirection,
+  margin,
+  className = 'front-page',
+}) {
   return (
-    <div className='front-page'>
+    <div className={className} style={{ flexDirection }}>
       <div className='dot-group'>
         <div className='dot'></div>
         <div className='dot'></div>
@@ -18,16 +26,14 @@ export function Frontpage() {
         <div className='dot'></div>
       </div>
       <div className='front-page-text'>
-        <h2>Virtual healthcare for you</h2>
-        <p>
-          Trafalgar provides progressive, and affordable healthcare, accessible
-          on mobile and online for everyone
-        </p>
-        <button className='btn'>Consult today</button>
+        <h2>{heaeding}</h2>
+        <div className='underline'></div>
+        <p>{body}</p>
+        <button className='btn'>{btnContent}</button>
       </div>
-      <div className='img'>
+      <div style={{ marginLeft: margin }} className='img'>
         <img
-          src='../../../src/assets/image/trafalgar-header illustration 1.png'
+          src={`../../../src/assets/image/trafalgar-header illustration ${img}.png`}
           alt='utu'
         />
       </div>

@@ -1,10 +1,20 @@
+body {
+  box-sizing: border-box;
+}
+
 .front-page {
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 100vh;
+  margin-top: -200px;
+  padding-inline: 70px;
+  gap: 270px;
 }
-
+.front-page2 {
+  flex-direction: row-reverse;
+}
 .dot-group {
   width: 100px;
   height: 140px;
@@ -12,7 +22,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: -10px;
   position: absolute;
-  top: 70px;
+  top: 230px;
   left: 10px;
 }
 .dot {
@@ -23,10 +33,9 @@
   opacity: 0.2;
 }
 .front-page-text {
-  width: 445px;
-  margin-left: 200px;
+  width: 500px;
   margin-top: 210px;
-  margin-right: 50px;
+  line-height: 60px;
 }
 .front-page-text > h2 {
   font-size: 3rem;
@@ -48,39 +57,41 @@
   font-size: 1.12rem;
   font-weight: 700;
 }
+.front-page2 .front-page-text > button {
+  background-color: transparent;
+  border: 1px solid #458ff6;
+  color: #458ff6;
+}
 .front-page .img {
-  top: 0;
-  right: 1000px;
   height: 400px;
   width: 60%;
-  margin-left: 0%;
-  max-width: 1000px;
+  max-width: 800px;
   z-index: 0;
 }
 .front-page .img img {
   width: 100%;
 }
+.underline {
+  background-color: black;
+  height: 2px;
+  width: 56px;
+}
 @media (min-width: 1700px) {
-  /* .front-page-text {
-    margin-right: 1050px;
-  } */
   .front-page .img {
-    margin-left: 270px;
     width: 50%;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .front-page .img {
-    display: block;
-    margin-top: -200px;
+    width: 500px;
   }
   .front-page {
-    justify-content: center;
     flex-direction: column-reverse;
-  }
-  .front-page-text {
-    margin-left: 100px;
-    margin-top: 60px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* padding-top: 200px; */
+    margin-top: 100px;
   }
   .front-page-text > h2 {
     font-size: 1.5rem;
@@ -88,10 +99,27 @@
   .front-page-text > p {
     font-size: 1rem;
   }
+  div .front-page-text {
+    margin-top: 100px;
+    margin-left: 100px;
+  }
 }
 @media (max-width: 700px) {
-  .front-page .img img {
+  .front-page .img {
+    width: 500px;
+    margin-bottom: 00px;
+  }
+}
+@media (max-width: 500px) {
+  div .front-page-text {
     width: 300px;
-    margin-top: 100px;
+    margin-top: -150px;
+    margin-left: 00px;
+  }
+  .front-page .img {
+    width: 350px;
+  }
+  .front-page {
+    margin-top: 0;
   }
 }

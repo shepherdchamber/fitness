@@ -22,7 +22,7 @@ export function Services({ data }) {
         alt=''
       />
       <div className='navigation'>
-        {data.map({ img, title, context }, (i) => (
+        {data.map(({ img, title, context }, i) => (
           <div key={i} className='nav-box'>
             <img className='logo' src={img} alt='' />
             <p className='context'>

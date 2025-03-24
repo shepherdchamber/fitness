@@ -68,8 +68,6 @@
   font-weight: 700;
 }
 @media (max-width: 1300px) {
-  .navigation {
-  }
   .nav-box {
     width: 300px;
   }
@@ -78,6 +76,9 @@
   }
 }
 @media (max-width: 1100px) {
+  .services {
+    margin-top: 100px;
+  }
   .navigation {
     grid-template-columns: 1fr 1fr;
   }
