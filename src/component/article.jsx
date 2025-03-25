@@ -26,6 +26,7 @@ export function Article({ data }) {
           </div>
         ))}
       </div>
+      <button>View all</button>
       <img src={waterMark} alt='' className='watermark' />
       <img src={dot} alt='' className='dot' />
     </div>

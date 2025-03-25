@@ -6,6 +6,7 @@ import { Services } from './component/our-services.jsx';
 import { articleData, data } from './assets/data/data.js';
 import { Customer } from './component/customer.jsx';
 import { Article } from './component/article.jsx';
+import { Footer } from './component/footer.jsx';
 function App() {
   return (
     <>
@@ -38,6 +39,7 @@ function App() {
       />
       <Customer />
       <Article data={articleData} />
+      <Footer />
     </>
   );
 }

@@ -13,6 +13,9 @@ button {
 }
 body {
   background-color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  padding-bottom: 500px;
+  font-family: Mulish, sans-serif;
+}
+.mission {
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
