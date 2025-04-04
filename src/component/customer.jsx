@@ -1,8 +1,8 @@
 import userPicture from '../assets/image/Mask Group.png';
-import back from '../assets/image/Vector.png';
-import dot from '../assets/image/Group (1).png';
+import back from '../../src/assets/image/Vector.png';
+import dot from '../../src/assets/image/Group (1).png';
 import '../styles/customer.css';
-import slider from '../assets/image/slider.png';
+import slider from '../../src/assets/image/slider.png';
 export function Customer() {
   return (
     <div className='customer'>

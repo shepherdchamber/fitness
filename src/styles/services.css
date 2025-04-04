@@ -90,12 +90,16 @@
     grid-template-columns: 1fr;
   }
   .nav-box {
-    width: 400px;
+    width: 320px;
+    padding-inline: 10px;
   }
-  .context {
+  .nav-box img.logo {
+    margin-left: 25px;
+  }
+  .nav-box .context {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
   }
 }
